@@ -222,3 +222,36 @@ th, td {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+.grid-container {
+  display: grid;
+  grid-template: "header header" "content content" "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 300px 50px;
+  background-color: #FFFFE0
+}
+
+.header {
+  grid-area: header;
+  background-color: #FFFFE0
+}
+
+.content {
+  grid-area: content;
+  background-color: #FFFFE0
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+/*.footer {
+  grid-area: footer;
+  background-color: #FFFFE0
+}*/
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
