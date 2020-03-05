@@ -13,7 +13,7 @@
 </ul>
 <p>The <code>ClientApp</code> subdirectory is a standard Angular CLI application. If you open a command prompt in that directory, you can run any <code>ng</code> command (e.g., <code>ng test</code>), or use <code>npm</code> to install extra packages into it.</p>-->
 
-  <body>
+  <body style="font-family:'TH SarabunPSK'">
     <div class="jumbotron text-center" style="margin-bottom:0; font-family : 'TH Sarabun New'">
       <img src="assets/VP.png">
       <h1>สำนักงานคณะกรรมการอาหารและยา</h1>
@@ -21,7 +21,7 @@
     </div>
 
     <nav style="font-family : Sarabun; width:100%" class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <div class="collapse navbar-collapse a" id="collapsibleNavbar" style="font-family:'TH SarabunPSK'">
         <a class="navbar-brand" href="#">หน้าหลัก</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -43,12 +43,37 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container a">
       <div style="text-align:center">
-        <h2 style="font-family:'TH Sarabun New'">แบบขอใหม่</h2>
+        <h2 style="font-family:'TH Sarabun New';">แบบขอใหม่</h2>
         <p>Swing by for a cup of coffee, or leave us a message:</p>
       </div>
       <div class="row">
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">เลขทะเบียน</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+            <label for="rcvno">เลขรับ</label>
+            <input type="text" id="lname" name="rcvno" placeholder="Your last name.." >
+            <label for="fname">ชื่อยา(ภาษาไทย)</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+            <label for="fname">ชื่อยา(ภาษาอังกฤษ)</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+            <label for="Status">สถานะของเอกสาร</label>
+            <select id="Status" name="Status" style="height:15px">
+              <option value="australia">รับเข้าห้องแล้ว</option>
+              <option value="canada">แสกน</option>
+              <option value="usa">เก็บใส่กล่อง</option>
+            </select>
+            <label for="subject">Description</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Upload">
+          </form>
+        </div>
+
+
+
+
         <div class="column">
           <table>
             <tr>
@@ -75,23 +100,7 @@
             </tr>
           </table>
         </div>
-        <div class="column">
-          <form action="/action_page.php">
-            <label for="fname">เลขทะเบียน</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <label for="lname">เลขรับ</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            <label for="country">ชื่อยา</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-            <label for="subject">Description</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-            <input type="submit" value="Upload">
-          </form>
-        </div>
+
       </div>
     </div>
 

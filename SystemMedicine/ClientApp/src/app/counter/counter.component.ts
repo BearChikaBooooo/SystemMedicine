@@ -6,4 +6,5 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   templateUrl: './counter.component.html'
 })
 export class CounterComponent  {
+
   }

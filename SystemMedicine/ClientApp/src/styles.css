@@ -4,6 +4,9 @@
 a {
   color: #0366d6;
 }
+div.a {
+  font-size: 150%;
+}
 
 
 code {
