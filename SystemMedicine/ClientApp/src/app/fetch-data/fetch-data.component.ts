@@ -6,6 +6,11 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './fetch-data.component.html'
 })
 export class FetchDataComponent {
+  statuse = [
+    'รับเข้าห้องแล้ว',
+    'สแกน',
+    'เก็บใส่กล่อง',
+  ]
   public forecasts: WeatherForecast[];
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {

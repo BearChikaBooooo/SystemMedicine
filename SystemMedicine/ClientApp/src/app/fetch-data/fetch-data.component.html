@@ -1,4 +1,4 @@
-<h1 id="tableLabel">Weather forecast</h1>
+<!--<h1 id="tableLabel">Weather forecast</h1>
 
 <p>This component demonstrates fetching data from the server.</p>
 
@@ -21,4 +21,56 @@
       <td>{{ forecast.summary }}</td>
     </tr>
   </tbody>
-</table>
+</table>-->
+
+  <div class="jumbotron text-center" style="margin-bottom:0; font-family : 'TH Sarabun New'">
+    <img src="assets/VP.png">
+    <h1>สำนักงานคณะกรรมการอาหารและยา</h1>
+    <p style="font-family : Sarabun ">Food and Drug Administration</p>
+  </div>
+
+<div class="grid-container">
+  <div class="header">
+    <h1>ระบบจัดการเอกสารด้านยา</h1>
+  </div>
+
+
+  <table class="content">
+    <tr>
+      <th>ค้นหา</th>
+    </tr>
+    <br />
+    <tr>
+      <td>เลขทะเบียน</td>
+      <td><input type="text" placeholder="เลขทะเบียน" /></td>
+    </tr>
+    <br>
+    <tr>
+      <td>เลขรับ</td>
+      <td><input type="text" placeholder="เลขรับ" /></td>
+    </tr>
+    <br>
+    <tr>
+      <td>สถานะของเอกสาร</td>
+      <td>
+        <select>
+          <option value="">กรุณาเลือก</option>
+          <option *ngFor="let status of statuse">
+            {{status}}
+          </option>
+        </select>
+      </td>
+    </tr>
+    <br>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="ค้นหา">
+
+    </tr>
+
+  </table>
+
+  <div class="footer">
+    
+  </div>
+</div>
